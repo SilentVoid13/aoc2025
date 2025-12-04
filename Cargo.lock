@@ -34,7 +34,7 @@ dependencies = [
 [[package]]
 name = "aoc-utils"
 version = "0.1.0"
-source = "git+https://github.com/silentvoid13/aoc-utils.git#4799a57dbadd774dd83d53fec2aa737ff86bc8fa"
+source = "git+https://github.com/silentvoid13/aoc-utils.git#e3b8a94f536bce2a5a4d676d854d89f1c23bc574"
 
 [[package]]
 name = "aoc2025"
