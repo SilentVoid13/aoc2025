@@ -65,6 +65,7 @@
         fnBuildInputs = pkgs: with pkgs; [ ];
         shellPkgs = with pkgs; [
           cargo-aoc
+          hyperfine
         ];
       in
       rec {
