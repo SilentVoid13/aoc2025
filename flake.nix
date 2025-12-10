@@ -62,7 +62,12 @@
               buildInputs = fnBuildInputs arch_pkgs;
             };
 
-        fnBuildInputs = pkgs: with pkgs; [ ];
+        fnBuildInputs =
+          pkgs: with pkgs; [
+            z3
+            pkg-config
+            clang
+          ];
         shellPkgs = with pkgs; [
           cargo-aoc
           hyperfine
@@ -77,6 +82,8 @@
         devShell = pkgs.mkShell {
           inputsFrom = [ defaultPackage ];
           packages = shellPkgs;
+          LIBCLANG_PATH = "${pkgs.libclang.lib}/lib";
+          LD_LIBRARY_PATH = "${pkgs.z3.lib}/lib";
         };
       }
     );
