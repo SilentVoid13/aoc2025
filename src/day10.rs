@@ -1,9 +1,9 @@
 use std::collections::VecDeque;
 
 use aoc_runner_derive::{aoc, aoc_generator};
-use gxhash::{HashMap, HashSet};
+use gxhash::HashSet;
 use z3::{
-    Config, Context, Optimize, SatResult, Solver,
+    Optimize, SatResult,
     ast::{self, Int},
 };
 

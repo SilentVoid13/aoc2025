@@ -5,7 +5,6 @@ use aoc_utils::{
     grid::Grid,
     point::{DOWN, LEFT, Point, RIGHT},
 };
-use gxhash::{HashSet, HashSetExt};
 
 type Input = (Grid<u8>, Point);
 
